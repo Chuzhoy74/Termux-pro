@@ -40,21 +40,4 @@ else
     echo "curl уже установлен."
 fi
 
-# Клонирование репозитория (замени ссылку на свой репозиторий)
-echo "Клонирование репозитория..."
-git clone https://github.com/Chuzhoy74/Termux-pro.git
-
-# Переход в директорию проекта
-cd Termux-Pro
-
-# Запуск установки или других скриптов
-if [ -f "install.sh" ]; then
-    echo "Запуск install.sh..."
-    chmod +x install.sh
-    ./install.sh
-else
-    echo "Файл install.sh не найден в репозитории."
-fi
-
-# Завершение
 echo "Установка завершена!"
